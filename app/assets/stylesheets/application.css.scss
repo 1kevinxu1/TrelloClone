@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery-ui
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+.boards-index {
+  text-align: center;
+  // font-weight: bold;
+}
+.boards-index-item {
+  // background: #106ba3;
+  // color: white;
+  line-height: 2em;
+}
+//
+// .boards-index-item:hover {
+//   background: #152578;
+// }
+//
+// .add-board {
+//   font-weight: lighter;
+// }
+//
+.remove-board {
+  padding: 5px;
+  font-size: 10px;
+}
+
+.list-group {
+  list-style-type: none;
+}
+
+.list{
+  position: relative;
+  width: 200px;
+  min-height: 400px;
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: 10px;
+  background-color: #ddd
+}
+
+.list:hover {
+  border: 1px solid #adb7c1;
+}
+
+.list-title{
+  padding: 5px 10px 0px 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.new-list-title {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #999;
+  top: 37%;
+  width: 100%;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.new-list:hover {
+  background-color: #999;
+  cursor: pointer;
+  .new-list-title {
+    color: white;
+  }
+}
+
+.card {
+  border-radius: 2px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  color: #555;
+  min-height: 2em;
+}
+
+.card-item{
+  float: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  width:90%;
+}
+
+.card-item:hover {
+  background-color: #eee
+}
+//
+.show-form {
+  text-align: center;
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #0088CC;
+  color: #FFF;
+}
+
+.show-form:hover {
+  cursor: hand;
+  background-color: #0044CC;
+  border: 1px solid #152578;
+}
+
+.card-form {
+  margin: 12px;
+  background-color: #fff;
+  padding: 0px 0px 5px 0px;
+}
+
+.form-button {
+  margin: 0px 5px 0px 5px;
+}
+
+.delete-card {
+  float: left;
+  background-color: #d9534f;
+  font-weight: 400px;
+  color: white;
+  border: #d9534f;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 10%;
+}
+
+.delete-card:hover {
+  cursor: pointer;
+  background-color: #B20000;
+
+}
